@@ -11,7 +11,7 @@ export default function Searchbar(search: {
     const [input, setInput] = useState<string | undefined>();
   
     useEffect(() => {
-      const listener = (event: { key: string; preventDefault: () => void }) => {
+      const listener = (event: { key: string; preventDefault: () => void }) => { 
         //detects if the user is pressing the enter key to start a search
         if (event.key === "Enter") {
           event.preventDefault();
@@ -26,7 +26,7 @@ export default function Searchbar(search: {
 
     return (
         <Box>
-          <Input placeholder='city'
+          <Input placeholder='City'
           variant='outline'
           focusBorderColor='blue.600'
           onChange={(e) => setInput(e.target.value)}
