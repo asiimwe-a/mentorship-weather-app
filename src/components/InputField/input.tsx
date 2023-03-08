@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
-import { Box, Input } from '@chakra-ui/react'
+import { Box, Center, Input, InputGroup, InputRightElement } from '@chakra-ui/react'
 
 export default function Searchbar(search: {
     setSearch: Dispatch<SetStateAction<string | undefined>>;
@@ -26,30 +26,20 @@ export default function Searchbar(search: {
 
     return (
         <Box>
-          <Input placeholder='City'
-          variant='outline'
-          focusBorderColor='blue.600'
+          <Center>
+          <Input placeholder='Nairobi,Kenya'
+          variant='filled'
+          focusBorderColor='blue.300'
+          htmlSize={90}
+          width='auto'
+          borderRadius={36}
+          marginTop={5}
           onChange={(e) => setInput(e.target.value)}
             onFocus={(e) => {
              e.target.value = "";
           }}
- />
-          <Box
-            className="icon"
-            data-tip="get data by user search"
-          >
-            <FaSearch
-              className="cursor-pointer"
-              onClick={() => search.setSearch(input)}
-            />
+ /></Center>
           </Box>
-          <Box className="tooltip tooltip-bottom" data-tip="activate user geolocation">
-            <FaMapMarkerAlt
-              className="cursor-pointer"
-              onClick={() => search.setGeolocate(!search.geolocate)}
-            />
-          </Box>
-        </Box>
       );
     }
 
