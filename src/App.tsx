@@ -7,9 +7,7 @@ const App: React.FC = () => {
     <Box backgroundColor="white">
       <Searchbar setSearch={function (value: React.SetStateAction<string | undefined>): void {
         throw new Error("Function not implemented.");
-      } } setGeolocate={function (value: React.SetStateAction<boolean>): void {
-        throw new Error("Function not implemented.");
-      } } geolocate={false} />
+      } }  />
     
     </Box>
   );

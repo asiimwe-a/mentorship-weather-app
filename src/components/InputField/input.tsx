@@ -1,13 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
-import { Box, Center, Input, InputGroup, InputRightElement } from '@chakra-ui/react'
+
+import { Dispatch, SetStateAction, useEffect, useState } from "react"
+import { Box, Center, Input} from '@chakra-ui/react'
 
 export default function Searchbar(search: {
     setSearch: Dispatch<SetStateAction<string | undefined>>;
-    setGeolocate: Dispatch<SetStateAction<boolean>>;
-    geolocate: boolean;
-  }) {
+    }) {
     const [input, setInput] = useState<string | undefined>();
   
     useEffect(() => {
