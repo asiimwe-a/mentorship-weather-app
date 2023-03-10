@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Image, Text, Flex, Grid } from "@chakra-ui/react";
 
-function Days() {
-  const days = [1, 2, 3, 4, 5, 6, 7];
+const Days: React.FC = () => {
+  const days: number[] = [1, 2, 3, 4, 5, 6, 7];
   return (
     <Grid
       bg="#f5fbff"
@@ -13,7 +13,9 @@ function Days() {
       {days.map((day) => {
         return (
           <Box bg="white" color="black" p="1rem">
-            <Text fontSize="2rem" paddingLeft='5%'>Mon 14</Text>
+            <Text fontSize="2rem" paddingLeft="5%">
+              Mon 14
+            </Text>
             <Image src="https://cdn-icons-png.flaticon.com/128/1888/1888282.png" />
             <Flex justify="space-between" p="0 5%">
               <Flex
@@ -48,6 +50,6 @@ function Days() {
       })}
     </Grid>
   );
-}
+};
 
 export default Days;
