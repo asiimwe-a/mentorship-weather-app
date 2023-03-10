@@ -10,8 +10,8 @@ import {
   LinearScale,
   PointElement,
   Filler,
+  ScriptableContext,
 } from "chart.js";
-import { Box } from "@chakra-ui/layout";
 ChartJS.register(
   Title,
   Tooltip,
@@ -30,18 +30,24 @@ const LineChart: React.FC = () => {
       {
         label: "",
         data: [40, 39, 50, 45, 45, 50, 60, 65],
-        backgroundColor: `orange`,
-        tension: 0.4,
+        backgroundColor: (context: ScriptableContext<"line">) => {
+          const ctx = context.chart.ctx;
+          const gradient = ctx.createLinearGradient(100, 0, 0, 400);
+          gradient.addColorStop(0, "#FF430B");
+          gradient.addColorStop(1, "#FFCD46");
+          return gradient;
+        },
+        tension: 0.3,
         fill: true,
-        pointStyle: "number",
       },
     ],
   };
 
   const options = {
     responsive: true,
+    pointLable: false,
     legend: {
-      display: false,
+      display: true,
     },
 
     scales: {
@@ -55,6 +61,7 @@ const LineChart: React.FC = () => {
         grid: {
           display: false,
         },
+        display: false,
       },
     },
   };
