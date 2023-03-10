@@ -24,6 +24,7 @@ const WeatherChart: React.FC = () => {
         justifyContent="space-between"
         gap={{ base: "0", xl: "6%" }}
         mt="72px"
+        flexDir={{ base: "column", semiLg: "row" }}
       >
         <Box minW={{ xl: "40%" }}>
           <Heading fontSize="24px" fontWeight={500}>
@@ -40,9 +41,9 @@ const WeatherChart: React.FC = () => {
             Partly Cloudy
           </Text>
         </Box>
-        <Box w={{}}>
+        <Box w={{ nesthubLg: "400px", lg: "100%" }}>
           <Tabs variant="soft-rounded">
-            <TabList gap="30px" pl="170px">
+            <TabList gap="30px">
               <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>
                 Temperature
               </Tab>
