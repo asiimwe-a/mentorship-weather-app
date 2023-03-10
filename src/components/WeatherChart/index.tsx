@@ -40,26 +40,30 @@ const WeatherChart: React.FC = () => {
             Partly Cloudy
           </Text>
         </Box>
-        <Tabs variant="soft-rounded">
-          <TabList gap="30px" pl="170px">
-            <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>Temperature</Tab>
-            <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>
-              Precipitation
-            </Tab>
-            <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>Wind</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <LineChart />
-            </TabPanel>
-            <TabPanel>
-              <LineChart />
-            </TabPanel>
-            <TabPanel>
-              <LineChart />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
+        <Box w={{}}>
+          <Tabs variant="soft-rounded">
+            <TabList gap="30px" pl="170px">
+              <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>
+                Temperature
+              </Tab>
+              <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>
+                Precipitation
+              </Tab>
+              <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>Wind</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <LineChart />
+              </TabPanel>
+              <TabPanel>
+                <LineChart />
+              </TabPanel>
+              <TabPanel>
+                <LineChart />
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        </Box>
       </Flex>
     </Flex>
   );
