@@ -10,6 +10,7 @@ const theme = extendTheme({
     sm: "576px",
     md: "768px",
     semiLg: "992px",
+    nesthubLg: "1020px",
     lg: "1200px",
     semiXl: "1400px",
     xl: "1750px",

@@ -43,7 +43,7 @@ const WeatherChart: React.FC = () => {
         </Box>
         <Box w={{ nesthubLg: "400px", lg: "100%" }}>
           <Tabs variant="soft-rounded">
-            <TabList gap="30px">
+            <TabList gap="30px" pl={{ xl: "170px" }}>
               <Tab _selected={{ color: "gray", bg: "#f5fbff" }}>
                 Temperature
               </Tab>
