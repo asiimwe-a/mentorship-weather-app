@@ -25,24 +25,11 @@ ChartJS.register(
 
 const LineChart: React.FC = () => {
   const data = {
-    labels: [
-      "Jan",
-      "Feb",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
+    labels: ["1 PM", "4 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM", "12 PM"],
     datasets: [
       {
         label: "",
-        data: [40, 39, 50, 60, 35, 62, 40, 59, 61, 65, 65, 65],
+        data: [40, 39, 50, 45, 45, 50, 60, 65],
         backgroundColor: `orange`,
         tension: 0.4,
         fill: true,
