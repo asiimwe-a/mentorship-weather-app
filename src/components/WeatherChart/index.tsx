@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Flex, Text, Heading } from "@chakra-ui/layout";
 import Searchbar from "../InputField/input";
+import LineChart from "./LineChart";
 
 const WeatherChart: React.FC = () => {
   return (
@@ -26,8 +27,8 @@ const WeatherChart: React.FC = () => {
           <Text>Feels 79 &#8457; </Text>
           <Text fontSize="34px">Partly Cloudy</Text>
         </Box>
-        <Box>
-          <Text>Hello World</Text>
+        <Box w="700px" h="400px">
+          <LineChart />
         </Box>
       </Flex>
     </Flex>
