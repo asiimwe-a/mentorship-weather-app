@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Line } from "react-chartjs-2";
+import "chartjs-plugin-datalabels";
+
 import {
   Chart as ChartJS,
   Title,
@@ -28,7 +30,7 @@ const LineChart: React.FC = () => {
     labels: ["1 PM", "4 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM", "12 PM"],
     datasets: [
       {
-        label: "",
+        label: "Weather",
         data: [40, 39, 50, 45, 45, 50, 60, 65],
         backgroundColor: (context: ScriptableContext<"line">) => {
           const ctx = context.chart.ctx;
@@ -39,6 +41,7 @@ const LineChart: React.FC = () => {
         },
         tension: 0.3,
         fill: true,
+        pointRadius: 0,
       },
     ],
   };
@@ -46,8 +49,9 @@ const LineChart: React.FC = () => {
   const options = {
     responsive: true,
     pointLable: false,
-    legend: {
-      display: true,
+    plugins: {
+      legend: false,
+      tooltip: false,
     },
 
     scales: {
