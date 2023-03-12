@@ -34,7 +34,7 @@ const Days: React.FC = () => {
               </Flex>
               <Flex
                 w="45%"
-                direction="column"
+                flexDir="column"
                 justify="space-evenly"
                 align="flex-end"
                 opacity=".3"
