@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Line } from "react-chartjs-2";
-import "chartjs-plugin-datalabels";
 
 import {
   Chart as ChartJS,
@@ -69,11 +68,7 @@ const LineChart: React.FC = () => {
       },
     },
   };
-  return (
-    <Line data={data} options={options}>
-      Hello
-    </Line>
-  );
+  return <Line data={data} options={options} />;
 };
 
 export default LineChart;
