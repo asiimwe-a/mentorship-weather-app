@@ -12,6 +12,7 @@ import {
   PointElement,
   Filler,
   ScriptableContext,
+  ChartOptions,
 } from "chart.js";
 ChartJS.register(
   Title,
@@ -45,12 +46,12 @@ const LineChart: React.FC = () => {
     ],
   };
 
-  const options = {
+  const options: ChartOptions<any> = {
     responsive: true,
-    pointLable: false,
+    pointLable: true,
     plugins: {
       legend: false,
-      tooltip: false,
+      tooltip: true,
     },
 
     scales: {
