@@ -42,18 +42,18 @@ const Days: React.FC = () => {
                 p=".2rem"
                 // bg="skyblue"
               >
-                <Flex justify="space-between" align="center">
-                  <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "" }}>
+                <Flex justify="space-between" align="center" paddingRight={{base:'40%', md:"30%"}}>
+                  <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
                     21
                   </Text>
                   <Text
-                    fontSize={{ base: "1.2rem", md: "1.4rem", lg: "" }}
+                    fontSize={{ base: "1.2rem", md: "1.4rem", lg: "1.5rem" }}
                     opacity="0.3"
                   >
                     13
                   </Text>
                 </Flex>
-                <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "" }}>
+                <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
                   Cloudy
                 </Text>
               </Flex>
@@ -65,7 +65,7 @@ const Days: React.FC = () => {
                 justify="space-evenly"
                 opacity=".3"
                 fontWeight="semibold"
-                fontSize={{ base: ".8rem",sm:"1.2rem", md: "1rem" }}
+                fontSize={{ base: ".8rem",sm:"1.2rem", md: "1rem", lg:"1.3rem" }}
                 // bg='slategray'
               >
                 <Text>Feels 90 F / 71F</Text>
