@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Image, Text, Flex, Grid } from "@chakra-ui/react";
 
 const Days: React.FC = () => {
-  const days: number[] = [1, 2, 3, 4, 5, 6, 7];
+  const days: number[] = [1, 2, 3];
   return (
     <Grid
       bg="#f5fbff"
