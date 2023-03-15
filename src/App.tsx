@@ -6,7 +6,7 @@ import Days from "./components/Days";
 
 const App: React.FC = () => {
   return (
-    <Box bg="#f5fbff" h="100vh" p={4}>
+    <Box bg="grayBg" h="100vh" p={4}>
       <WeatherChart />
       <GetApi />
       <Days />
