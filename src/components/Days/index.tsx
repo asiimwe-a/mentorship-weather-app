@@ -8,7 +8,7 @@ const Days: React.FC = () => {
     <Grid
       bg="#f5fbff"
       p="1rem"
-      w={{ base: "100%", md: "74%" }}
+      // w={{ base: "100%", md: "74%" }}
       h={{ base: "", md: "60%" }}
       templateColumns={{
         base: "1fr",

@@ -13,7 +13,7 @@ const App: React.FC = () => {
       p={4}
       gridTemplateColumns="3fr 1fr"
       gridAutoRows="1fr"
-      gridColumnGap="0px"
+      gridColumnGap="40px"
       gridRowGap="0px"
     >
       <Box>

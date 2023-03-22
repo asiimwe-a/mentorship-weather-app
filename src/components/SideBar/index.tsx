@@ -5,7 +5,7 @@ import { Avatar } from "@chakra-ui/react";
 
 const Sidebar: React.FC = () => {
   return (
-    <Box bg="yellow">
+    <Box bg="white">
       <Text>Weather News</Text>
       <Grid bg="green" gridTemplateColumns="1fr 1fr">
         <Flex flexDir="column">

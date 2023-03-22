@@ -6,13 +6,7 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 
 const WeatherChart: React.FC = () => {
   return (
-    <Flex
-      maxW="72%"
-      bg="#ffffff"
-      m="48px 0px 0px 24px"
-      flexDir="column"
-      p="30px"
-    >
+    <Flex bg="#ffffff" m="48px 0px 0px 24px" flexDir="column" p="30px">
       <Searchbar
         setSearch={function (
           value: React.SetStateAction<string | undefined>
