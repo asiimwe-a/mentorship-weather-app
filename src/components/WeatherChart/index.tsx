@@ -7,7 +7,7 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 const WeatherChart: React.FC = () => {
   return (
     <Flex
-      maxW="60%"
+      maxW="72%"
       bg="#ffffff"
       m="48px 0px 0px 24px"
       flexDir="column"

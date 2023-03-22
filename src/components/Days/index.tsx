@@ -8,11 +8,11 @@ const Days: React.FC = () => {
     <Grid
       bg="#f5fbff"
       p="1rem"
-      w={{ base: "100%", md: "75%" }}
-      h={{base:"", md:"60%"}}
+      w={{ base: "100%", md: "74%" }}
+      h={{ base: "", md: "60%" }}
       templateColumns={{
         base: "1fr",
-        md:'repeat(3, 1fr)'
+        md: "repeat(3, 1fr)",
       }}
       gap={{ base: "1rem", md: "1rem" }}
     >
@@ -34,7 +34,7 @@ const Days: React.FC = () => {
             />
             <Flex justify="space-between" p="0 5%">
               <Flex
-                w="45%"
+                w="44%"
                 h="70%"
                 marginTop="10%"
                 direction="column"
@@ -42,7 +42,11 @@ const Days: React.FC = () => {
                 p=".2rem"
                 // bg="skyblue"
               >
-                <Flex justify="space-between" align="center" paddingRight={{base:'40%', md:"30%"}}>
+                <Flex
+                  justify="space-between"
+                  align="center"
+                  paddingRight={{ base: "40%", md: "30%" }}
+                >
                   <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
                     21
                   </Text>
@@ -65,7 +69,12 @@ const Days: React.FC = () => {
                 justify="space-evenly"
                 opacity=".3"
                 fontWeight="semibold"
-                fontSize={{ base: ".8rem",sm:"1.2rem", md: "1rem", lg:"1.3rem" }}
+                fontSize={{
+                  base: ".8rem",
+                  sm: "1.2rem",
+                  md: "1rem",
+                  lg: "1.3rem",
+                }}
                 // bg='slategray'
               >
                 <Text>Feels 90 F / 71F</Text>
