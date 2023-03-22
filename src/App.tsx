@@ -26,11 +26,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-// .parent {
-//   display: grid;
-//   grid-template-columns: 2fr 1fr;
-//   grid-template-rows: 1fr;
-//   grid-column-gap: 0px;
-//   grid-row-gap: 0px;
-//   }
