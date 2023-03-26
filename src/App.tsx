@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Grid, Box } from "@chakra-ui/layout";
 import WeatherChart from "./components/WeatherChart";
-// import GetApi from "./components/GetApi";
 import Days from "./components/Days";
 import Sidebar from "./components/SideBar";
 
