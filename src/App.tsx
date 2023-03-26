@@ -8,7 +8,6 @@ const App: React.FC = () => {
   return (
     <Grid
       bg="grayBg"
-      h="100vh"
       p={4}
       gridTemplateColumns="3fr 1fr"
       gridAutoRows="1fr"
