@@ -6,7 +6,7 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 
 const WeatherChart: React.FC = () => {
   return (
-    <Flex bg="#ffffff" m="0px 0px 0px 24px" flexDir="column" p="24px">
+    <Flex bg="#fff" flexDir="column" p="24px">
       <Searchbar
         setSearch={function (
           value: React.SetStateAction<string | undefined>
@@ -31,7 +31,7 @@ const WeatherChart: React.FC = () => {
             <Text fontSize="24px">&#8457;</Text>
           </Flex>
           <Text>Feels 79 &#8457; </Text>
-          <Text mt="60px" fontSize="34px">
+          <Text mt="40px" fontSize="32px">
             Partly Cloudy
           </Text>
         </Box>

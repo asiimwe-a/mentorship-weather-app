@@ -7,14 +7,15 @@ const Days: React.FC = () => {
   return (
     <Grid
       bg="#f5fbff"
-      p="1rem"
+      // p="1rem"
       // w={{ base: "100%", md: "74%" }}
-      h={{ base: "", md: "60%" }}
+      // h={{ base: "", md: "60%" }}
       templateColumns={{
         base: "1fr",
         md: "repeat(3, 1fr)",
       }}
-      gap={{ base: "1rem", md: "1rem" }}
+      gap={{ base: "1rem", md: "1.5rem" }}
+      marginTop = '24px'
     >
       {days.map((day) => {
         return (
@@ -24,6 +25,7 @@ const Days: React.FC = () => {
             p="1rem"
             flexDir="column"
             justify="space-evenly"
+            gap={6}
           >
             <Text fontSize="2rem" paddingLeft="5%">
               Mon 14
@@ -44,17 +46,18 @@ const Days: React.FC = () => {
               >
                 <Flex
                   justify="space-between"
-                  align="center"
-                  paddingRight={{ base: "40%", md: "30%" }}
+                  alignItems="flex-end"
+                  // align="center"
+                  // paddingRight={{ base: "40%", md: "30%" }}
                 >
                   <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
-                    21
+                    21°
                   </Text>
                   <Text
                     fontSize={{ base: "1.2rem", md: "1.4rem", lg: "1.5rem" }}
                     opacity="0.3"
                   >
-                    13
+                    13°
                   </Text>
                 </Flex>
                 <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
@@ -73,11 +76,11 @@ const Days: React.FC = () => {
                   base: ".8rem",
                   sm: "1.2rem",
                   md: "1rem",
-                  lg: "1.3rem",
+                  lg: "1rem",
                 }}
                 // bg='slategray'
               >
-                <Text>Feels 90 F / 71F</Text>
+                <Text>Feels 90°F / 71°F</Text>
                 <Text>Humidity: 0.74% </Text>
                 <Text>Wind: 15.6 MI/H</Text>
               </Flex>

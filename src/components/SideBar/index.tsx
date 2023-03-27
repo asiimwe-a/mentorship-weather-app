@@ -44,17 +44,17 @@ const Sidebar: React.FC = () => {
     },
   ];
   return (
-    <Box bg="white" padding="24px">
+    <Box bg="white" padding="16px">
       <Text fontSize="32px" marginBottom="16px">
         Weather News
       </Text>
       {WeatherNewsData.map(({ title, avatar, author, image }) => (
-        <Grid padding="10px" gridTemplateColumns="1.5fr 1fr">
+        <Grid padding="8px" gridTemplateColumns="1.5fr 1fr">
           <Flex flexDir="column" gap="16px">
-            <Text fontSize="20px">{title}</Text>
+            <Text fontSize="16px">{title}</Text>
             <Flex marginTop="auto">
               <Avatar mr={4} src={avatar} size="sm" />
-              <Text fontSize="20px">{author}</Text>
+              <Text fontSize="16px">{author}</Text>
             </Flex>
           </Flex>
           <Box>
