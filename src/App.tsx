@@ -14,7 +14,7 @@ const App: React.FC = () => {
       // gridColumnGap="24px"
       // gridRowGap="0px"
       gap={6}
-      maxWidth= '1400px'
+      // maxWidth= '1400px'
       margin= '0 auto'
     >
       <Box>

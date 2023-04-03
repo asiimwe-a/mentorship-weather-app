@@ -42,6 +42,14 @@ const Sidebar: React.FC = () => {
         "https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       author: "Rain ANt",
     },
+    {
+      title: "Winter Storms Cause Travel Chaos Across the Northeastern U.S",
+      image:
+        "https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYXRoZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      avatar:
+        "https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      author: "Rain ANt",
+    }
   ];
   return (
     <Box bg="white" padding="16px">
@@ -58,7 +66,7 @@ const Sidebar: React.FC = () => {
             </Flex>
           </Flex>
           <Box>
-            <Image src={image} boxSize="100%" />
+            <Image src={image} boxSize="100%" objectFit={"cover"}/>
           </Box>
         </Grid>
       ))}
