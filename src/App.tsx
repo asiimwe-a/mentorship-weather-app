@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Grid, Box } from "@chakra-ui/layout";
 import WeatherChart from "./components/WeatherChart";
-// import GetApi from "./components/GetApi";
 import Days from "./components/Days";
 import Sidebar from "./components/SideBar";
 
@@ -9,12 +8,14 @@ const App: React.FC = () => {
   return (
     <Grid
       bg="grayBg"
-      h="100vh"
-      p={4}
+      p={6}
       gridTemplateColumns="3fr 1fr"
       gridAutoRows="1fr"
-      gridColumnGap="40px"
-      gridRowGap="0px"
+      // gridColumnGap="24px"
+      // gridRowGap="0px"
+      gap={6}
+      // maxWidth= '1400px'
+      margin= '0 auto'
     >
       <Box>
         <WeatherChart />
