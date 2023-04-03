@@ -7,15 +7,12 @@ const Days: React.FC = () => {
   return (
     <Grid
       bg="#f5fbff"
-      // p="1rem"
-      // w={{ base: "100%", md: "74%" }}
-      // h={{ base: "", md: "60%" }}
       templateColumns={{
         base: "1fr",
         md: "repeat(3, 1fr)",
       }}
       gap={{ base: "1rem", md: "1.5rem" }}
-      marginTop = '24px'
+      marginTop="24px"
     >
       {days.map((day) => {
         return (
