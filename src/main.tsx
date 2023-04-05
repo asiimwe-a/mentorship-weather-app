@@ -7,7 +7,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: { grayBg: "#f5fbff" },
   breakpoints: {
-    sm: "576px",
+    sm: "360px",
     md: "768px",
     semiLg: "992px",
     nesthubLg: "1020px",

@@ -11,34 +11,34 @@ const Days: React.FC = () => {
         base: "1fr",
         md: "repeat(3, 1fr)",
       }}
-      gap={{ base: "1rem", md: "1.5rem" }}
-      marginTop="24px"
+      gap={4}
+      // marginTop="24px"
     >
       {days.map((day) => {
         return (
           <Flex
             bg="white"
             color="black"
-            p="1rem"
+            p="3rem 2rem"
             flexDir="column"
             justify="space-evenly"
             gap={6}
           >
-            <Text fontSize="2rem" paddingLeft="5%">
+            <Text fontSize="2rem" >
               Mon 14
             </Text>
             <Image
               src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png"
-              w="40%"
+              w="45%"
             />
-            <Flex justify="space-between" p="0 5%">
+            <Flex justify="space-between" >
               <Flex
-                w="44%"
-                h="70%"
-                marginTop="10%"
+                // w="44%"
+                // h="70%"
+                // marginTop="10%"
                 direction="column"
                 justify="space-between"
-                p=".2rem"
+                // p=".2rem"
                 // bg="skyblue"
               >
                 <Flex
@@ -47,34 +47,29 @@ const Days: React.FC = () => {
                   // align="center"
                   // paddingRight={{ base: "40%", md: "30%" }}
                 >
-                  <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
+                  <Text fontSize={{ base: "2rem", md: "1.7rem", lg: "2rem" }}>
                     21°
                   </Text>
                   <Text
-                    fontSize={{ base: "1.2rem", md: "1.4rem", lg: "1.5rem" }}
+                    fontSize={{ base: "1.5rem", md: "1.4rem", lg: "1.5rem" }}
                     opacity="0.3"
                   >
                     13°
                   </Text>
                 </Flex>
-                <Text fontSize={{ base: "1.5rem", md: "1.7rem", lg: "2rem" }}>
+                <Text fontSize={{ base: "2rem", md: "1.7rem", lg: "2rem" }}>
                   Cloudy
                 </Text>
               </Flex>
               <Flex
                 // w="45%"
-                h="70%"
-                marginTop="10%"
+                // h="70%"
+                // marginTop="10%"
                 flexDir="column"
                 justify="space-evenly"
-                opacity=".3"
-                fontWeight="semibold"
-                fontSize={{
-                  base: ".8rem",
-                  sm: "1.2rem",
-                  md: "1rem",
-                  lg: "1rem",
-                }}
+                opacity=".5"
+                // fontWeight="semibold"
+                fontSize="1rem"
                 // bg='slategray'
               >
                 <Text>Feels 90°F / 71°F</Text>
