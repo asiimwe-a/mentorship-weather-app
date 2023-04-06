@@ -29,9 +29,10 @@ export default function Searchbar(search: {
           focusBorderColor="blue.300"
           htmlSize={180}
           width="100%"
-          h="70px"
+          // h="70px"
+          padding={6}
           borderRadius={36}
-          marginTop={5}
+          margin="32px 16px"
           onChange={(e) => setInput(e.target.value)}
           onFocus={(e) => {
             e.target.value = "";

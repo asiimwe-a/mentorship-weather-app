@@ -8,19 +8,20 @@ const App: React.FC = () => {
   return (
     <Grid
       bg="grayBg"
-      p={6}
-      gridTemplateColumns="3fr 1fr"
-      gridAutoRows="1fr"
-      // gridColumnGap="24px"
-      // gridRowGap="0px"
-      gap={6}
-      // maxWidth= '1400px'
+      p={4}
+      gridTemplateColumns="1fr"
+      // gridAutoRows="1fr"
+      gap={4}
       margin= '0 auto'
     >
-      <Box>
+      <Grid 
+        gridTemplateColumns="1fr"
+        // gridTemplateRows="auto 1fr"
+        gap={4}
+      >
         <WeatherChart />
         <Days />
-      </Box>
+      </Grid>
       <Sidebar />
     </Grid>
   );
